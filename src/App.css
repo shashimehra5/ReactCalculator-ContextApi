@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/* my Css */
+body, html {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+.compDisplay > div {
+  font-size: 2.5rem;
+  padding: .2rem .7rem .1rem .5rem;
+}
+
+.calculatorBody {
+  background-color: #3d5c5c;
+  max-width: 500px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.button-panel {
+  background-color: #858694;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.button-panel, .button-panel>div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+
+}
+
+.button-panel > div {
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+.button-key {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 25%;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+.button-key.wide{
+  width: 50%;
+}
+.button-key.orange button {
+  background-color: #f5923e;
+  color: #fff;
+}
+.button-key button {
+  background-color: #fff;
+  border: 0;
+  font-size: 1.5rem;
+  margin: 0 1px 0 0;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  padding: 10px;
+  font-weight: bold;
+}
+
+input, textarea, select, button {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  color: buttontext;
+  background-color: buttonface;
+  box-sizing: border-box;
+  padding: 2px 6px 3px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  border-image: initial;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

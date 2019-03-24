@@ -3,9 +3,6 @@ import Buttons from "./Buttons";
 import { Consumer } from "../../Context";
 
 class ButtonsHolder extends Component {
-    clickButton () {
-        alert(1);
-    }
     render(){
         return(
             <Consumer>
@@ -17,7 +14,7 @@ class ButtonsHolder extends Component {
                                 {
                                     buttonsKey.map((button, index)=> {
                                         return (<div  key={index}>
-                                            <Buttons buttonArr={button} onClick={this.clickButton.bind(this)}></Buttons>
+                                            <Buttons buttonArr={button}></Buttons>
                                         </div>);
                                     })
                                 }
